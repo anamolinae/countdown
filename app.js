@@ -1,4 +1,5 @@
 const timeLeft = document.getElementById('time-left');
+
 const birthday = new Date ('03/03/2023')
 const second = 1000 
 const minute = second * 60
@@ -10,9 +11,9 @@ let timerId
 function countdown(){
     const today = new Date()
     const timeSpan = birthday - today 
-    console.log(timeSpan)
+    //console.log(timeSpan)
     if (timeSpan <= -day ){
-        timeLeft.innerHTML = " hoppe u have a nice bday"
+        timeLeft.innerHTML = " hoppe u have a nice b-day"
         return
     }
     if (timeSpan <= 0){
